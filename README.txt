@@ -33,10 +33,10 @@ Supported file formats are:
  * PNG - max size is 2048x2048
  * MP4 - only H264 supported
 
-Call the script create_playlist like this to create an 
+Call the script create-playlist like this to create an 
 info-beamer node in the directory /tmp/playlist:
 
- $ ./create_playlist playlist.txt /tmp/playlist
+ $ ./create-playlist playlist.txt /tmp/playlist
 
 This will create a ready-to-use info-beamer node directory
 in /tmp/playlist. Now start info-beamer like this:
