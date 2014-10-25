@@ -1,4 +1,4 @@
-VERSION = $(RELEASE).$(shell git rev-parse --short=6 HEAD)
+VERSION = $(shell git rev-parse --short=6 HEAD)
 
 release: build.py README.txt main.py
 	rm -rf build
