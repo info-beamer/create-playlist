@@ -4,13 +4,13 @@ Simple tool for creating playlist nodes for info-beamer
 Installation
 ------------
 
-Make the script create_playlist executable:
-
-  $ chmod +x create_playlist
-
 Install the package libav-tools:
 
   $ apt-get install libav-tools
+
+Install info-beamer. See 
+
+ https://info-beamer.com/doc/info-beamer#raspberrypiversion
 
 You should be ready to go.
 

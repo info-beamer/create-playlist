@@ -1,4 +1,8 @@
 #!/usr/bin/env python2.7
+#
+# Copyright (C) 2014 Florian Wesch <fw@dividuum.de>
+# All rights reserved.
+#
 import os
 import re
 import sys
