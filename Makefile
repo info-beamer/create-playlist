@@ -6,7 +6,8 @@ release: build.py README.txt main.py
 	python build.py data main.py build/playlist-$(VERSION)/create-playlist
 	chmod 755 build/playlist-$(VERSION)/create-playlist
 	ln COPYRIGHT README.txt build/playlist-$(VERSION)
-	tar cfvz build/create-playlist-$(VERSION).tar.gz -C build playlist-$(VERSION)
+	tar cfz build/create-playlist-$(VERSION).tar.gz -C build playlist-$(VERSION)
+	ls -l build/*.gz
 
 clean:
 	rm -rf build
