@@ -1,0 +1,100 @@
+{
+    "name": "Playlist",
+    "options": [{
+        "title": "Appearance",
+        "type": "section"
+    }, {
+        "title": "Background color",
+        "ui_width": 4,
+        "name": "background_color",
+        "doc_link": true,
+        "type": "color",
+        "default": [0,0,0,1]
+    }, {
+        "title": "Transition",
+        "ui_width": 4,
+        "name": "fade",
+        "type": "select",
+        "hint": "Transition animation when switching between content",
+        "doc_link": true,
+        "options": [
+            ["crossfade", "Fade in/Fade out"],
+            ["move", "Move in/out"],
+            ["move_shrink", "Move in/Shrink out"],
+            ["flip", "Flip animation"],
+            ["blend1", "Blend 1"],
+            ["blend2", "Blend 2"],
+            ["blend3", "Vortex"],
+            ["blend4", "Blend 4"],
+            ["blend5", "Blend 5"],
+            ["blend6", "Blend 6"]
+        ],
+        "default": "crossfade"
+    }, {
+        "title": "Switch time",
+        "ui_width": 4,
+        "name": "switch_time",
+        "type": "duration",
+        "doc_link": true,
+        "default": 1
+    }, 
+        
+    {
+        "title": "Title options",
+        "type": "section"
+    }, {
+        "title": "Show title",
+        "info": "Show title after switch",
+        "hint": "Whether or not to how the title of the current item after its playback started",
+        "doc_link": true,
+        "ui_width": 4,
+        "ui_spacing": 8,
+        "name": "show_title",
+        "type": "boolean",
+        "default": true
+    }, {
+        "title": "Title Font",
+        "ui_width": 4,
+        "name": "title_font",
+        "type": "font",
+        "default": "silkscreen.ttf"
+    }, {
+        "title": "Font size",
+        "ui_width": 4,
+        "name": "title_size",
+        "type": "integer",
+        "default": 20
+    }, {
+        "title": "Title Duration",
+        "ui_width": 4,
+        "hint": "How long should the title be displayed",
+        "name": "title_duration",
+        "type": "duration",
+        "default": 5 
+    }, {
+        "title": "Playlist",
+        "name": "playlist",
+        "type": "list",
+        "itemname": "Item",
+        "items": [{
+            "title": "Asset",
+            "ui_width": 5,
+            "name": "file",
+            "type": "resource",
+            "valid": ["image", "video", "child"],
+            "default": "empty.png"
+        }, {
+            "title": "Play time",
+            "ui_width": 3,
+            "name": "duration",
+            "type": "duration",
+            "default": 5
+        }, {
+            "title": "Title",
+            "ui_width": 4,
+            "name": "title",
+            "type": "string",
+            "default": "unnamed"
+        }]
+    }]
+}
