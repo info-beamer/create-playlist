@@ -40,6 +40,7 @@ RESOURCE_TYPES = {
     ".jpg": ResourceType("image", probe_image),
     ".png": ResourceType("image", probe_image),
     ".mp4": ResourceType("video", probe_video),
+    ".mov": ResourceType("video", probe_video),
 }
 
 def make_dir(target):

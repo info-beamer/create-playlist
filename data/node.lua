@@ -1,5 +1,10 @@
 hosted_init()
-gl.setup(1024, 768)
+
+if sys.version and sys.version > "0.8.0" then
+    gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
+else
+    gl.setup(1920, 1280)
+end
 
 local iblib = require "iblib"
 
@@ -106,7 +111,7 @@ local faders = {
 
 local title_start = 99999999
 
-local idx = 0
+local idx = 0 -- offset before first item. will be incremented during first get_next_item
 local playlist_source = function()
     return CONFIG.playlist
 end;
