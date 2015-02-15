@@ -1,0 +1,15 @@
+# this is an example play list. Lines starting with # are ignored.
+# You can add metadata to each line. Currently only time is recognized.
+# Setting a time will overwrite how long a file is displayed. 
+
+# Play a video. Duration is automatically detected using the 'avprobe' tool.
+/tmp/2.mp4
+
+# Display an image. Default duration is 10 seconds.
+/tmp/1.jpg
+
+# Dsiplay another image. Display time is 5 seconds.
+/tmp/2.jpg time:5
+
+# You can also repeat a file. It will be displayed again
+/tmp/1.jpg

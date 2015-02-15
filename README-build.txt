@@ -6,11 +6,11 @@ Installation
 
 Install the package libav-tools:
 
-  $ apt-get install libav-tools
+    $ apt-get install libav-tools
 
 Install info-beamer. See 
 
- https://info-beamer.com/doc/info-beamer#raspberrypiversion
+  https://info-beamer.com/doc/info-beamer#raspberrypiversion
 
 You should be ready to go.
 
@@ -24,8 +24,10 @@ this:
 
 videos/1.mp4
 /home/foo/foo.jpg
-/home/foo/bar.jpg
+/home/foo/bar.jpg time:20
 /home/foo/foo.jpg
+
+Have a look at example-playlist.txt for more information.
 
 Supported file formats are:
 
@@ -36,9 +38,9 @@ Supported file formats are:
 Call the script create-playlist like this to create an 
 info-beamer node in the directory /tmp/playlist:
 
- $ ./create-playlist playlist.txt /tmp/playlist
+    $ ./create-playlist playlist.txt /tmp/playlist
 
 This will create a ready-to-use info-beamer node directory
 in /tmp/playlist. Now start info-beamer like this:
 
- $ info-beamer /tmp/playlist
+    $ info-beamer /tmp/playlist
