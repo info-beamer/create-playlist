@@ -204,5 +204,6 @@ if __name__ == "__main__":
         extract_data(target)
     except InstallError, err:
         print "Installation failed: %s" % err
+        sys.exit(1)
     else:
         print "Node directory %s ready. Now start info-beamer like this:\ninfo-beamer %s" % (target, target)
